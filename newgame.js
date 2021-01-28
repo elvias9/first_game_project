@@ -168,7 +168,7 @@ let playAgain = function () {
         winSection.appendChild(restartButton);
    
          restartButton.onclick = function () {
-        location.href = "/newgame.html";
+        location.href = "newgame.html";
     }
     
     // addEventListener('click', () => {
