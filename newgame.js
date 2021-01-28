@@ -153,6 +153,27 @@ function winGame () {
 function loseGame () {
     clearInterval(countdown)
     document.querySelector(".countdown").innerHTML = "TIME IS OVER";
+
+    letters.parentNode.removeChild(letters);
+    listOfLetters.parentNode.removeChild(listOfLetters);
+    correct.parentNode.removeChild(correct);
+    chosenLetter.parentNode.removeChild(chosenLetter)
+    let loseMessage = document.createElement('p')
+    loseMessage.innerText = 'You LOST!!! This is very sad! Give it another shot.';
+    loseSection.appendChild(loseMessage);
+    let losePicture = document.createElement('img')
+    losePicture.setAttribute('src', './assets/sad_kitten.jpg')
+    losePicture.setAttribute('id', 'lose-image')
+    losePicture.setAttribute('alt', 'sad-kitten')
+    loseSection.appendChild(losePicture);
+    let retryButton = document.createElement('button')
+        retryButton.setAttribute('class', 'new-game-btn')
+        retryButton.innerText = 'Try Again' 
+        loseSection.appendChild(retryButton);
+   
+         retryButton.onclick = function () {
+        location.href = "./newgame.html";
+    }
     
 }
 

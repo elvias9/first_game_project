@@ -12,12 +12,15 @@ let time = 60;
 
 
 let winSection = document.querySelector('.win-message')
+let loseSection = document.querySelector('.lose-message')
+console.log(loseSection)
 //console.log(winMessage)
 
 function startGame () {
         document.querySelector('.start-game-btn').addEventListener('click', function () {
         document.getElementById('notes').classList.add('hidden');
-        winSection.classList.add('hidden');  
+        //winSection.classList.add('hidden'); 
+         
         document.querySelector('.game').classList.remove('hidden');
         hiddenSolution = easyGame[Math.floor(Math.random()*easyGame.length)].split('')
         console.log(hiddenSolution)
@@ -121,7 +124,6 @@ function winGame () {
         if (counter + space === lettersPicked.length) {     
             result = true
            // winSection.innerText = "YOU WON!!!"
-           winSection.classList.remove('hidden');
            letters.parentNode.removeChild(letters);
               listOfLetters.parentNode.removeChild(listOfLetters);
               correct.parentNode.removeChild(correct);
@@ -153,8 +155,32 @@ function winGame () {
 function loseGame () {
     clearInterval(countdown)
     document.querySelector(".countdown").innerHTML = "TIME IS OVER";
-    
+
+    letters.parentNode.removeChild(letters);
+    listOfLetters.parentNode.removeChild(listOfLetters);
+    correct.parentNode.removeChild(correct);
+    chosenLetter.parentNode.removeChild(chosenLetter)
+    let loseMessage = document.createElement('p')
+    loseMessage.innerText = 'You LOST!!! This is very sad! Give it another shot.';
+    loseSection.appendChild(loseMessage);
+    let losePicture = document.createElement('img')
+    losePicture.setAttribute('src', './assets/sad_kitten.jpg')
+    losePicture.setAttribute('id', 'lose-image')
+    losePicture.setAttribute('alt', 'sad-kitten')
+    loseSection.appendChild(losePicture);
+    let retryButton = document.createElement('button')
+        retryButton.setAttribute('class', 'new-game-btn')
+        retryButton.innerText = 'Try Again' 
+        loseSection.appendChild(retryButton);
+   
+         retryButton.onclick = function () {
+        location.href = "./newgame.html";
+    }
+
 }
+
+console.log(document.getElementById('intro-img'))
+
 
 let playAgain = function () {
     //document.getElementById('notes').classList.add('hidden'); NON MI SERVE?
