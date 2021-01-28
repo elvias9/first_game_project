@@ -164,7 +164,7 @@ let playAgain = function () {
      winMessage.innerText = 'YOU WON!!! Are you really an expert?!'
      winSection.appendChild(winMessage);
     let restartButton = document.createElement('button')
-        restartButton.setAttribute('class', 'new-game')
+        restartButton.setAttribute('class', 'new-game-btn')
         restartButton.innerText = "Play Again"
         winSection.appendChild(restartButton);
    

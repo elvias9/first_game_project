@@ -15,7 +15,7 @@ let winSection = document.querySelector('.win-message')
 //console.log(winMessage)
 
 function startGame () {
-        document.querySelector('.start-newgame-btn').addEventListener('click', function () {
+        document.querySelector('.start-game-btn').addEventListener('click', function () {
         //document.getElementById('notes').classList.add('hidden');
         winSection.classList.add('hidden');  
         document.querySelector('.game').classList.remove('hidden');
@@ -164,7 +164,7 @@ let playAgain = function () {
      winMessage.innerText = 'YOU WON!!! You are a movie buff!'
      winSection.appendChild(winMessage);
     let restartButton = document.createElement('button')
-        restartButton.setAttribute('class', 'new-game')
+        restartButton.setAttribute('class', 'new-game-btn')
         restartButton.innerText = "Play Again"
         winSection.appendChild(restartButton);
    

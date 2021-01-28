@@ -35,9 +35,10 @@ h1 {
   transform: scale(1.2);
 }
 
-.start-newgame-btn {
-    font-size: 1em;
+.new-game-btn {
+    font-size: 0.7em;
     padding: 20px 20px;
+    margin-top: 50px;
     background-color:  #448e90;
     color: white;
     border: 1px solid #448e90;
@@ -46,7 +47,7 @@ h1 {
     transition: transform .2s;
   }
   
-  .start-newgame-btn:hover {
+  .new-game-btn:hover {
     transform: scale(1.2);
   }
 
@@ -157,9 +158,10 @@ h1 {
 
   .win-message {
     display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 30px;
-  padding: 50px;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
   }
 
