@@ -1,0 +1,165 @@
+
+body {
+    margin: 8px 8px;
+    font-family: 'Original Surfer', cursive;
+  
+}
+
+h1 {
+  text-align: center;
+    font-size: 50px;
+}
+
+
+.set-game{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #41a8a9 ;
+  padding: 100px
+  
+}
+
+.start-game-btn {
+  font-size: 1em;
+  padding: 20px 20px;
+  background-color:  #448e90;
+  color: white;
+  border: 1px solid #448e90;
+  border-radius: 15px;
+  box-shadow: 5px 5px rgba(136,136,136,.2);
+  transition: transform .2s;
+}
+
+.start-game-btn:hover {
+  transform: scale(1.2);
+}
+
+.start-newgame-btn {
+    font-size: 1em;
+    padding: 20px 20px;
+    background-color:  #448e90;
+    color: white;
+    border: 1px solid #448e90;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(136,136,136,.2);
+    transition: transform .2s;
+  }
+  
+  .start-newgame-btn:hover {
+    transform: scale(1.2);
+  }
+
+.instruction {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  padding: 100px;
+
+}
+
+.instruction img {
+  width: 10em;
+}
+
+
+.game {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.new-game {
+    display:flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.countdown {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 3.5em;;
+}
+
+
+  .solutions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .solutions ul {
+    display: flex;
+    list-style: none;
+    letter-spacing: 5px;
+    justify-content: center;
+  } 
+
+
+   .hidden {
+    display: none;
+  } 
+
+
+  .letters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .letters-container ul{
+  display: flex;
+	flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  }
+
+  #alphabet li {
+  border: 2px solid #41a8a9;
+  background-color: #f3f3f3;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  }
+
+  #letter {
+    transition: transform .2s;
+  }
+
+  #letter:hover {
+    transform: scale(1.2);
+  }
+
+  
+  #my-letter li {
+    position: relative;
+    list-style: none;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 0 10px;
+    font-size:1.5em;
+  }
+  
+
+
+  .win-message {
+    display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px;
+  }
+

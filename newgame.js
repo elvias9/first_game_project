@@ -15,8 +15,8 @@ let winSection = document.querySelector('.win-message')
 //console.log(winMessage)
 
 function startGame () {
-        document.querySelector('.start-game-btn').addEventListener('click', function () {
-        document.getElementById('notes').classList.add('hidden');
+        document.querySelector('.start-newgame-btn').addEventListener('click', function () {
+        //document.getElementById('notes').classList.add('hidden');
         winSection.classList.add('hidden');  
         document.querySelector('.game').classList.remove('hidden');
         hiddenSolution = easyGame[Math.floor(Math.random()*easyGame.length)].split('')
@@ -160,7 +160,7 @@ let playAgain = function () {
     //document.querySelector('.game').classList.add('hidden');
      //winSection.classList.remove('hidden');
      let winMessage = document.createElement ('p')
-     winMessage.innerText = 'YOU WON!!! Are you really an expert?!'
+     winMessage.innerText = 'YOU WON!!! You are a movie buff!'
      winSection.appendChild(winMessage);
     let restartButton = document.createElement('button')
         restartButton.setAttribute('class', 'new-game')
