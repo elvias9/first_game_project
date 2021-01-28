@@ -127,6 +127,7 @@ function winGame () {
               correct.parentNode.removeChild(correct);
               chosenLetter.parentNode.removeChild(chosenLetter)
             clearInterval(countdown)
+            document.querySelector('.countdown').classList.add('hidden');
             playAgain () 
         // document.getElementById('notes').classList.add('hidden');
         // document.querySelector('.game').classList.add('hidden');
@@ -168,7 +169,7 @@ let playAgain = function () {
         winSection.appendChild(restartButton);
    
          restartButton.onclick = function () {
-        location.href = "newgame.html";
+        location.href = "./newgame.html";
     }
     
     // addEventListener('click', () => {
