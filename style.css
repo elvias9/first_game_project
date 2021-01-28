@@ -18,9 +18,15 @@ h1 {
   background-color:  #41a8a9 ;
   padding: 60px; 
 }
+.level {
+    display: flex;
+    font-size: 1.2em;
+    align-items: center;
+    margin-bottom: 5px;
+  }
 
 .start-game-btn {
-  font-size: 1em;
+  font-size: 1.3em;
   padding: 20px 20px;
   background-color:  #448e90;
   color: white;

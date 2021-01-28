@@ -8,7 +8,7 @@ let chosenLetter; //the player guess
 let space; //the space among the words in the sentence
 let counter; //number of correct chosenLetter
 let result; //the result of the game true win, false lose
-let time = 60;
+let time; 
 
 
 let winSection = document.querySelector('.win-message')
@@ -20,10 +20,19 @@ function startGame () {
         document.getElementById('notes').classList.add('hidden');
         winSection.classList.add('hidden');  
         document.querySelector('.game').classList.remove('hidden');
-        hiddenSolution = easyGame[Math.floor(Math.random()*easyGame.length)].split('')
-        console.log(hiddenSolution)
+
+        if (document.querySelector('#easy').checked) {
+            hiddenSolution = easyGame[Math.floor(Math.random()*easyGame.length)].split('')
+            console.log(hiddenSolution)
+            } else if (document.querySelector('#medium').checked){
+            hiddenSolution = mediumGame[Math.floor(Math.random()*mediumGame.length)].split('')
+            console.log(hiddenSolution)
+            }else if (document.querySelector('#expert').checked) {
+              hiddenSolution = expertGame[Math.floor(Math.random()*expertGame.length)].split('')
+              console.log(hiddenSolution)
+            }
         lettersPicked = [];
-        time = 60;
+        time = 30;
         counter = 0
         space = 0
         buttons()
