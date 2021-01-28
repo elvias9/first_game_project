@@ -132,13 +132,14 @@ function startCountdown(time) {
 function winGame () {
         if (counter + space === lettersPicked.length) {     
             result = true
-           // winSection.innerText = "YOU WON!!!"
+           
            letters.parentNode.removeChild(letters);
             listOfLetters.parentNode.removeChild(listOfLetters);
              //correct.parentNode.removeChild(correct);
             //  chosenLetter.parentNode.removeChild(chosenLetter)
             clearInterval(countdown)
             document.querySelector('.countdown').classList.add('hidden');
+            document.querySelector('.start-game-btn').classList.add('hidden');
             playAgain () 
         } 
 }
@@ -147,7 +148,7 @@ function winGame () {
 function loseGame () {
     clearInterval(countdown)
     document.querySelector(".countdown").innerHTML = "TIME IS OVER";
-
+    document.querySelector('.start-game-btn').classList.add('hidden');
     letters.parentNode.removeChild(letters);
     listOfLetters.parentNode.removeChild(listOfLetters);
     correct.parentNode.removeChild(correct);
