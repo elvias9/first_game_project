@@ -125,9 +125,9 @@ function winGame () {
             result = true
            // winSection.innerText = "YOU WON!!!"
            letters.parentNode.removeChild(letters);
-              listOfLetters.parentNode.removeChild(listOfLetters);
-              correct.parentNode.removeChild(correct);
-              chosenLetter.parentNode.removeChild(chosenLetter)
+            listOfLetters.parentNode.removeChild(listOfLetters);
+             //correct.parentNode.removeChild(correct);
+            //  chosenLetter.parentNode.removeChild(chosenLetter)
             clearInterval(countdown)
             document.querySelector('.countdown').classList.add('hidden');
             playAgain () 
@@ -162,7 +162,7 @@ function loseGame () {
 
 }
 
-console.log(document.getElementById('intro-img'))
+//console.log(document.getElementById('intro-img'))
 
 
 let playAgain = function () {

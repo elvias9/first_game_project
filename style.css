@@ -60,6 +60,10 @@ h1 {
 
 }
 
+.instruction span {
+    font-size: 25px;
+}
+
 .instruction img {
   width: 10em;
 }

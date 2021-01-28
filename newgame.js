@@ -125,8 +125,8 @@ function winGame () {
            winSection.classList.remove('hidden');
            letters.parentNode.removeChild(letters);
               listOfLetters.parentNode.removeChild(listOfLetters);
-              correct.parentNode.removeChild(correct);
-              chosenLetter.parentNode.removeChild(chosenLetter)
+              //correct.parentNode.removeChild(correct);
+              //chosenLetter.parentNode.removeChild(chosenLetter)
             clearInterval(countdown)
             document.querySelector('.countdown').classList.add('hidden');
             playAgain () 
