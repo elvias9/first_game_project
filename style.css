@@ -95,6 +95,7 @@ h1 {
 
   .solutions ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     letter-spacing: 5px;
     justify-content: center;

@@ -9,15 +9,16 @@ const easyGame = [
     'ELEMENTARY MY DEAR WATSON',
     'TOMORROW IS ANOTHER DAY',
     'HOUSTON WE HAVE A PROBLEM',
-    'TO INFINITY AND BEYOND'
+    'TO INFINITY AND BEYOND',
+    'WHERE WE ARE GOING WE DO NOT NEED ROADS',
+    'NOBODY PUTS BABY IN A CORNER'
 ]
 
 
 const mediumGame = [
     'THERE IS NO PLACE LIKE HOME',
     'ROSEBUD',
-    'MY PRECIOUS',
-    'TOMORROW IS ANOTHER DAY',   
+    'MY PRECIOUS'   
 ]
 
 const expertGame = [

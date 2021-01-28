@@ -12,11 +12,12 @@ let time = 60;
 
 
 let winSection = document.querySelector('.win-message')
+let loseSection = document.querySelector('.lose-message')
 //console.log(winMessage)
 
 function startGame () {
         document.querySelector('.start-game-btn').addEventListener('click', function () {
-        //document.getElementById('notes').classList.add('hidden');
+        document.getElementById('notes').classList.add('hidden');
         winSection.classList.add('hidden');  
         document.querySelector('.game').classList.remove('hidden');
         hiddenSolution = easyGame[Math.floor(Math.random()*easyGame.length)].split('')
@@ -129,23 +130,7 @@ function winGame () {
             clearInterval(countdown)
             document.querySelector('.countdown').classList.add('hidden');
             playAgain () 
-        // document.getElementById('notes').classList.add('hidden');
-        // document.querySelector('.game').classList.add('hidden');
-        //  let winMessage = document.createElement ('p')
-        //  winMessage.innerText = 'YOU WON!!! Click the Start button to Play Again'
-        // let restartButton = document.createElement('button')
-        //     restartButton.setAttribute('class', 'new-game')
-        //     restartButton.innerText = "Play Again"
-    //        winSection.appendChild(winMessage);
-    //            letters.parentNode.removeChild(letters);
-    // listOfLetters.parentNode.removeChild(listOfLetters);
-    // correct.parentNode.removeChild(correct);
-    // chosenLetter.parentNode.removeChild(chosenLetter)
-    //startGame ()
-    //      winSection.appendChild(restartButton);
-    //      restartButton.addEventListener('click', () => {
-    //           playAgain ()
-    //    })
+
         } 
 }
 
@@ -159,13 +144,8 @@ function loseGame () {
     correct.parentNode.removeChild(correct);
     chosenLetter.parentNode.removeChild(chosenLetter)
     let loseMessage = document.createElement('p')
-    loseMessage.innerText = 'You LOST!!! This is very sad! Give it another shot.';
+    loseMessage.innerText = "We are not doing well! Wanna try again?";
     loseSection.appendChild(loseMessage);
-    let losePicture = document.createElement('img')
-    losePicture.setAttribute('src', './assets/sad_kitten.jpg')
-    losePicture.setAttribute('id', 'lose-image')
-    losePicture.setAttribute('alt', 'sad-kitten')
-    loseSection.appendChild(losePicture);
     let retryButton = document.createElement('button')
         retryButton.setAttribute('class', 'new-game-btn')
         retryButton.innerText = 'Try Again' 
@@ -178,7 +158,6 @@ function loseGame () {
 }
 
 let playAgain = function () {
-    //document.getElementById('notes').classList.add('hidden'); NON MI SERVE?
     //document.querySelector('.game').classList.add('hidden');
      //winSection.classList.remove('hidden');
      let winMessage = document.createElement ('p')
@@ -192,16 +171,6 @@ let playAgain = function () {
          restartButton.onclick = function () {
         location.href = "./newgame.html";
     }
-    
-    // addEventListener('click', () => {
-            //   time = 60;
-            //   lettersPicked = []
-            //    letters.parentNode.removeChild(letters);
-            //    listOfLetters.parentNode.removeChild(listOfLetters);
-            //    correct.parentNode.removeChild(correct);
-            //    chosenLetter.parentNode.removeChild(chosenLetter)
-            //    startGame ()
-    // })
  }
 
 

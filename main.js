@@ -131,23 +131,6 @@ function winGame () {
             clearInterval(countdown)
             document.querySelector('.countdown').classList.add('hidden');
             playAgain () 
-        // document.getElementById('notes').classList.add('hidden');
-        // document.querySelector('.game').classList.add('hidden');
-        //  let winMessage = document.createElement ('p')
-        //  winMessage.innerText = 'YOU WON!!! Click the Start button to Play Again'
-        // let restartButton = document.createElement('button')
-        //     restartButton.setAttribute('class', 'new-game')
-        //     restartButton.innerText = "Play Again"
-    //        winSection.appendChild(winMessage);
-    //            letters.parentNode.removeChild(letters);
-    // listOfLetters.parentNode.removeChild(listOfLetters);
-    // correct.parentNode.removeChild(correct);
-    // chosenLetter.parentNode.removeChild(chosenLetter)
-    //startGame ()
-    //      winSection.appendChild(restartButton);
-    //      restartButton.addEventListener('click', () => {
-    //           playAgain ()
-    //    })
         } 
 }
 
