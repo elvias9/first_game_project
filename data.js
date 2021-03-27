@@ -6,9 +6,10 @@ const easyGame = [
     'YO ADRIAN',
     'ET PHONE HOME',
     'I AM THE DUDE',
+    'TOMORROW IS ANOTHER DAY',
     'TO INFINITY AND BEYOND',
-    'SHOW ME THE MONEY',
-    'THANKS FOR THE WINGS'
+    'SHOW ME THE MONEY'
+    
     
 ]
 
@@ -16,7 +17,7 @@ const easyGame = [
 const mediumGame = [
     'THERE IS NO PLACE LIKE HOME',
     'ELEMENTARY MY DEAR WATSON',
-    'TOMORROW IS ANOTHER DAY',  
+    'THANKS FOR THE WINGS',
     'HOUSTON WE HAVE A PROBLEM',
     'MAY THE FORCE BE WITH YOU'
 ]

@@ -1,6 +1,4 @@
-//let solutionEasy; // to start the easyGame
-//let solutionMedium; // to start the MediumGame
-//let solutionExpert; // to start the ExpertGame
+
 let countdown; // to start countdown
 let hiddenSolution; //to randomly select a solution
 let lettersPicked = [];   //for selecting function
@@ -32,7 +30,7 @@ function startGame () {
               console.log(hiddenSolution)
             }
         lettersPicked = [];
-        time = 30;
+        time = 40;
         counter = 0
         space = 0
         buttons()
